@@ -6,7 +6,7 @@ import MenuDesktop from "./MenuDesktop";
 
 const Header = () => {
   return (
-    <div className="w-full flex max-md:justify-between">
+    <div className="w-full flex max-md:justify-between max-md:px-5">
       <Logo imageRoute={ShortlyLogo} alt="Shortly logo" />
       <div className="md:hidden">
         <MenuDialog />
