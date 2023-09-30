@@ -5,7 +5,7 @@ import constants from "../constants";
 const Hero = () => {
   return (
     <div className="flex max-md:flex-col">
-      <div className="max-md:order-2 max-md:text-center basis-3/5">
+      <div className=" flex flex-col justify-center  max-md:order-2 max-md:text-center basis-3/5">
         <h1 className="text-7xl font-bold">{constants.hero.title1}</h1>
         <h1 className="text-7xl font-bold">{constants.hero.title2}</h1>
         <p className="text-neutral-grayishViolet">
