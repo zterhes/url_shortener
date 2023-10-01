@@ -2,6 +2,7 @@ import React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import MobileMenuButton from "./MenuButton";
+import constants from "../constants";
 
 const MENU_BUTTON_STYLE: string = "basis-[13%] text-center w-full";
 
@@ -18,30 +19,30 @@ const MenuDialog = () => {
           <Dialog.Description />
           <MobileMenuButton
             className={MENU_BUTTON_STYLE}
-            buttonText={"Features"}
+            buttonText={constants.menu.features}
           />
           <MobileMenuButton
             className={MENU_BUTTON_STYLE}
-            buttonText={"Pricing"}
+            buttonText={constants.menu.pricing}
           />
           <MobileMenuButton
             className={MENU_BUTTON_STYLE}
-            buttonText={"Resources"}
+            buttonText={constants.menu.resources}
           />
           <MobileMenuButton
             className={MENU_BUTTON_STYLE}
-            buttonText={"Features"}
+            buttonText={constants.menu.features}
           />
           <hr className={MENU_BUTTON_STYLE} />
           <MobileMenuButton
             className={MENU_BUTTON_STYLE}
-            buttonText={"Login"}
+            buttonText={constants.menu.login}
           />
           <MobileMenuButton
             className={
               "bg-primary-cyan rounded-2xl w-[100%] basis-[12%] text-center"
             }
-            buttonText={"Sign up"}
+            buttonText={constants.menu.signUp}
           />
           <Dialog.Close />
         </Dialog.Content>
