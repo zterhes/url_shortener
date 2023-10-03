@@ -1,4 +1,6 @@
 import React from "react";
+import constants from "../constants";
+import { DesignedButton } from "./DesignedButton";
 import MenuButton from "./MenuButton";
 
 interface Props {
@@ -14,19 +16,23 @@ const MenuDesktop: React.FC<Props> = ({ className }) => {
       <div className="flex basis-1/4 justify-between">
         <MenuButton
           className={"text-neutral-grayishViolet"}
-          buttonText={"Features"}
+          buttonText={constants.menu.features}
         />
-        <MenuButton className={MENU_BUTTON_STYLE} buttonText={"Pricing"} />
-        <MenuButton className={MENU_BUTTON_STYLE} buttonText={"Resources"} />
+        <MenuButton
+          className={MENU_BUTTON_STYLE}
+          buttonText={constants.menu.pricing}
+        />
+        <MenuButton
+          className={MENU_BUTTON_STYLE}
+          buttonText={constants.menu.resources}
+        />
       </div>
       <div className="flex basis-1/6 justify-between">
-        <MenuButton className={MENU_BUTTON_STYLE} buttonText={"Login"} />
         <MenuButton
-          className={
-            "bg-primary-cyan rounded-2xl text-center text-white w-full"
-          }
-          buttonText={"Sign Up"}
+          className={MENU_BUTTON_STYLE}
+          buttonText={constants.menu.login}
         />
+        <DesignedButton size="w-full" buttonText={constants.menu.signUp} />
       </div>
     </div>
   );
