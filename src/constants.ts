@@ -13,4 +13,7 @@ export default {
     pricing: "Pricing",
     features: "Features",
   },
+  shortener: {
+    buttontext: "Shorten it!",
+  },
 };

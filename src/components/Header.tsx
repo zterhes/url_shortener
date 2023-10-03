@@ -11,7 +11,7 @@ const Header = () => {
       <div className="md:hidden">
         <MenuDialog />
       </div>
-      <MenuDesktop className="hidden md:flex basis-3/4 justify-between ml-10" />
+      <MenuDesktop className="hidden md:flex basis-3/4 justify-between w-full" />
     </div>
   );
 };

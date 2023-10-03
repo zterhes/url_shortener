@@ -9,7 +9,10 @@ interface Props {
 export const DesignedButton: React.FC<Props> = ({ size, buttonText }) => {
   return (
     <MenuButton
-      className={"bg-primary-cyan rounded-2xl text-center text-white " + size}
+      className={
+        "flex justify-center items-center bg-primary-cyan rounded-2xl text-white " +
+        size
+      }
       buttonText={buttonText}
     />
   );
